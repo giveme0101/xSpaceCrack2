@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.xu88.x.fileexployyrer.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="#C0C0C0"
+        android:visibility="gone">
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#C0C0C0" >
+
+        <TextView
+            android:id="@+id/title"
+            android:text="File Explorer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/top_add"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/add_button_background"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25px"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/pathBtnBox"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="30dp"
+        android:padding="0dp"
+        android:layout_margin="0dp">
+
+        <Button
+            android:id="@+id/path_btn0"
+            android:text=" / "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/path_button_background"
+            android:padding="0dp"
+            android:layout_margin="0dp" />
+
+        <TextView
+            android:id="@+id/path_txt0"
+            android:text=">"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/path_btn1"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/path_button_background"
+            android:padding="0dp"
+            android:layout_margin="0dp"/>
+
+        <TextView
+            android:id="@+id/path_txt1"
+            android:text=">"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/path_btn2"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/path_button_background"
+            android:padding="0dp"
+            android:layout_margin="0dp"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

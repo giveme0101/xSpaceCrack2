@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity5"
+    tools:showIn="@layout/activity_main5">
+
+    <EditText
+        android:id="@+id/textEditor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ems="10"
+        android:textSize="12dp"
+        android:inputType="textMultiLine"
+        android:gravity="left|top"
+        android:scrollbars="vertical|horizontal"
+        android:scrollbarStyle="insideInset" />
+
+</android.support.constraint.ConstraintLayout>

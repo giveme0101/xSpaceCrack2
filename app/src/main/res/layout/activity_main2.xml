@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.xu88.x.fileexployyrer.MainActivity2">
+
+    <LinearLayout
+        android:id="@+id/ll_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="#C0C0C0"
+        android:visibility="gone">
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#C0C0C0" >
+
+        <TextView
+            android:text="X Crack"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/vip_crack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="破解VIP" />
+
+            <Button
+                android:id="@+id/ads_remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去开屏广告" />
+
+            <Button
+                android:id="@+id/stop_statistics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="停止记录APP使用" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/vip_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消VIP" />
+
+            <Button
+                android:id="@+id/regain_ads"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="恢复开屏广告" />
+
+            <Button
+                android:id="@+id/regain_statistics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="恢复记录APP使用" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
